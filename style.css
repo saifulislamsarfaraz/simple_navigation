@@ -12,16 +12,19 @@ body{
 
 .container{
   background-color: #fafafa;
-  transform-origin: top right;
-  transition: transform .5s linear;
+  
   width: 100vw;
   min-height: 100vh;
   padding: 50px;
 }
 .container.show-nav{
+  transform-origin: top right;
+  transition: transform .5s linear;
   transform: rotate(20deg);
 }
 .container.show-nav1{
+  transform-origin: top left;
+  transition: transform .5s linear;
   transform: rotate(-20deg);
 }
 .container.show-nav + nav li{
@@ -72,7 +75,7 @@ body{
 .container.show-nav .circle{
   transform: rotate(-70deg);
 }
-.container.show-nav .circle1{
+.container.show-nav1 .circle1{
   transform: rotate(-70deg);
 }
 .circle button:focus{
@@ -87,6 +90,17 @@ body{
   right:60%;
   transform: rotate(90deg);
   transform-origin: top right;
+}
+.circle1 button:focus{
+  outline: none;
+}
+.circle1 button#openLeft{
+  left: 60%;
+}
+.circle1 button#closeLeft{
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
 }
 .circle1{
   background-color: tomato;
@@ -107,17 +121,7 @@ body{
   font-size: 26px;
   color: #fafafa;
 }
-.circle1 button:focus{
-  outline: none;
-}
-.circle1 button#openLeft{
-  left: 60%;
-}
-.circle1 button#closeLeft{
-  left: 60%;
-  transform: rotate(90deg);
-  transform-origin: top left;
-}
+
 nav ul{
   list-style-type: none;
   padding-right: 30px;
@@ -127,7 +131,7 @@ nav ul li{
   text-transform: uppercase;
   color: #fff;
   margin: 40px 0;
-  transform: translateX(-100%);
+  transform: translateX(100%);
   transition: tramsform 0.5s ease-in;
 }
 nav ul li i{
@@ -136,16 +140,16 @@ nav ul li i{
 }
 nav ul li + li{
   margin-right: 15px;
-  transform: translateX(-150%);
+  transform: translateX(150%);
 }
 nav ul li + li + li{
   margin-right: 30px;
-  transform: translateX(-200%);
+  transform: translateX(200%);
 }
 nav{
   position:fixed;
   bottom: 40px;
-  right: 0;
+  right:  0;
   z-index: 100;
 
 }

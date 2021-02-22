@@ -5,7 +5,7 @@ const openLeft = document.getElementById('openLeft')
 const closeLeft = document.getElementById('closeLeft')
 //const container = document.querySelector('.container')
 
-
+let currentAcitve = 1;
 
 close.addEventListener('click', () => container.classList.remove('show-nav'))
 
