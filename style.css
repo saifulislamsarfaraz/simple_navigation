@@ -166,7 +166,6 @@ body{
   font-size: 26px;
   color: #fafafa;
 }
-
 nav ul{
   list-style-type: none;
   padding-right: 40px;
@@ -176,7 +175,7 @@ nav ul li{
   text-transform: uppercase;
   color: #fff;
   margin: 40px 0;
-  transform: translateX(-100%);
+  transform: translateX(100%);
   transition: tramsform 0.5s ease-in;
 }
 nav ul li i{
@@ -185,11 +184,11 @@ nav ul li i{
 }
 nav ul li + li{
   margin-right: 15px;
-  transform: translateX(-150%);
+  transform: translateX(150%);
 }
 nav ul li + li + li{
   margin-right: 30px;
-  transform: translateX(-200%);
+  transform: translateX(200%);
 }
 nav{
   position:fixed;
