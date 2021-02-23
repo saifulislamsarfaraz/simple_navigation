@@ -61,6 +61,7 @@ body{
   width: 100vw;
   min-height: 100vh;
   padding: 50px;
+  margin: 0;
 }
 .container.show-nav{
   transform-origin: top right;
@@ -105,6 +106,7 @@ body{
   border: 0;
   font-size: 26px;
   color: #fff;
+  
 }
 .circle1 button{
   cursor: pointer;
