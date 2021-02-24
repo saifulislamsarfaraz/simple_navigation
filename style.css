@@ -103,7 +103,6 @@ body{
   position: relative;
   transition: transform 0.5s linear;
 }
-
 .circle button{
   cursor: pointer;
   position: absolute;
