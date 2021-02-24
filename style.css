@@ -91,6 +91,10 @@ body{
   top: -100px;
   left: -100px;
 }
+.loading-text{
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+}
 .circle{
   background-color: #ff7979;
   height: 200px;

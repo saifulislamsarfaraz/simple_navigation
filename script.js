@@ -27,7 +27,7 @@ btn_search.addEventListener('click', () => {
   input_search.focus()
 })
 
-
+const loadText = document.querySelector('.loading-text')
 const img = document.querySelector('.img');
 
 let load = 0;
@@ -41,8 +41,8 @@ function blurring() {
   if (load > 199) {
     clearInterval(int);
   }
-  //loadText.innerText = `${load}%`
-  //loadText.style.opacity = scale(load, 0, 100, 1, 0)
+  loadText.innerText = `${load}%`
+  loadText.style.opacity = scale(load, 0, 100, 1, 0)
   img.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
 
 }
