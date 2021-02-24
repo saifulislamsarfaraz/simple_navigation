@@ -73,9 +73,13 @@ body{
   transition: transform .5s linear;
   transform: rotate(-20deg);
 }
+.container.show-nav +  nav li{
+  transform: translateX(0);
+  transition-delay: 0.2s;
+}
 .container.show-nav + nav li{
   transform: translateX(0);
-  transition-delay: 0.5s;
+  transition-delay: 0.2s;
 }
 .circle-container{
   position: fixed;
@@ -173,18 +177,18 @@ nav ul{
   padding-right: 40px;
 
 }
-nav ul li{
+ nav ul li{
   text-transform: uppercase;
   color: #fff;
   margin: 40px 0;
   transform: translateX(100%);
   transition: tramsform 0.5s ease-in;
 }
-nav ul li i{
+ nav ul li i{
   font-size: 20px;
   margin-right: 10px;
 }
-nav ul li + li{
+ nav ul li + li{
   margin-right: 15px;
   transform: translateX(150%);
 }
@@ -197,10 +201,46 @@ nav{
   bottom: 40px;
   right:  0;
   z-index: 100;
+}
+/* .nav1 nav ul{
+  list-style-type: none;
+  padding-right: 40px;
 
 }
+.nav1 nav ul li{
+  text-transform: uppercase;
+  color: #fff;
+  margin: 40px 0;
+  transform: translateX(-100%);
+  transition: tramsform 0.5s ease-in;
+}
+.nav1 nav ul li i{
+  font-size: 20px;
+  margin-right: 10px;
+}
+.nav1 nav ul li + li{
+  margin-right: 15px;
+  transform: translateX(-150%);
+}
+.nav1 nav ul li + li + li{
+  margin-right: 30px;
+  transform: translateX(-200%);
+}
+.nav1 nav{
+  position:fixed;
+  bottom: 40px;
+  right:  0;
+  z-index: 100;
+
+} */
 .content img{
   max-width: 100%;
+  top: -30;
+  left: -30;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  z-index: -1;
+  filter: blur(0px);
 }
 .content{
   max-width: 1000px;
